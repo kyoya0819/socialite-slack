@@ -22,7 +22,7 @@ composer require mpociot/socialite-slack
 * Add `SocialiteProviders\Manager\SocialiteWasCalled` event to your listen[] array in `<app_name>/Providers/EventServiceProvider`.
 
 
-* The listener that you add for this provider is `'Mpociot\Socialite\Slack\SlackExtendSocialite@handle',`.
+* The listener that you add for this provider is `'Kyoya\Socialite\Slack\SlackExtendSocialite@handle',`.
 
 For example:
 
@@ -35,7 +35,7 @@ For example:
 protected $listen = [
     \SocialiteProviders\Manager\SocialiteWasCalled::class => [
         // add your listeners (aka providers) here
-        'Mpociot\Socialite\Slack\SlackExtendSocialite@handle',
+        'Kyoya\Socialite\Slack\SlackExtendSocialite@handle',
     ],
 ];
 ```
